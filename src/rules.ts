@@ -267,5 +267,48 @@ export const metaDataRules: Record<string, RuleSet> = {
 			[ 'meta[name="og:audio"][content]', (element) => element.getAttribute('content') ]
 		],
 		processor: (imageUrl: any, context) => context.options.forceImageHttps === true ? makeUrlSecure(makeUrlAbsolute(context.url, imageUrl)) : makeUrlAbsolute(context.url, imageUrl)
-	}
+	},
+	fcFrame: {
+		rules: [
+			[ 'meta[property="fc:frame"][content]', (element) => element.getAttribute('content') ],
+			[ 'meta[name="fc:frame"][content]', (element) => element.getAttribute('content') ]
+		]
+	},
+	fcFrameImage: {
+		rules: [
+			[ 'meta[property="fc:frame:image"][content]', (element) => element.getAttribute('content') ],
+			[ 'meta[name="fc:frame:image"][content]', (element) => element.getAttribute('content') ]
+		],
+		processor: (imageUrl: any, context) => context.options.forceImageHttps === true ? makeUrlSecure(makeUrlAbsolute(context.url, imageUrl)) : makeUrlAbsolute(context.url, imageUrl)
+	},
+	fcFramePostUrl: {
+		rules: [
+			[ 'meta[property="fc:frame:post_url"][content]', (element) => element.getAttribute('content') ],
+			[ 'meta[name="fc:frame:post_url"][content]', (element) => element.getAttribute('content') ]
+		]
+	},
+	fcFrameButton1: {
+		rules: [
+			[ 'meta[property="fc:frame:button:1"][content]', (element) => element.getAttribute('content') ],
+			[ 'meta[name="fc:frame:button:1"][content]', (element) => element.getAttribute('content') ]
+		]
+	},
+	fcFrameButton2: {
+		rules: [
+			[ 'meta[property="fc:frame:button:2"][content]', (element) => element.getAttribute('content') ],
+			[ 'meta[name="fc:frame:button:2"][content]', (element) => element.getAttribute('content') ]
+		]
+	},
+	fcFrameButton3: {
+		rules: [
+			[ 'meta[property="fc:frame:button:3"][content]', (element) => element.getAttribute('content') ],
+			[ 'meta[name="fc:frame:button:3"][content]', (element) => element.getAttribute('content') ]
+		]
+	},
+	fcFrameButton4: {
+		rules: [
+			[ 'meta[property="fc:frame:button:4"][content]', (element) => element.getAttribute('content') ],
+			[ 'meta[name="fc:frame:button:4"][content]', (element) => element.getAttribute('content') ]
+		]
+	},
 }
