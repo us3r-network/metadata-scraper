@@ -1,6 +1,6 @@
 {
   "name": "@us3r-network/metadata-scraper",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "description": "A Javascript library for scraping/parsing metadata from a web page.  ",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

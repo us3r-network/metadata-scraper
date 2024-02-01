@@ -311,4 +311,28 @@ export const metaDataRules: Record<string, RuleSet> = {
 			[ 'meta[name="fc:frame:button:4"][content]', (element) => element.getAttribute('content') ]
 		]
 	},
+	fcFrameButton1Action: {
+		rules: [
+			[ 'meta[property="fc:frame:button:1:action"][content]', (element) => element.getAttribute('content') ],
+			[ 'meta[name="fc:frame:button:1:action"][content]', (element) => element.getAttribute('content') ]
+		]
+	},
+	fcFrameButton2Action: {
+		rules: [
+			[ 'meta[property="fc:frame:button:2:action"][content]', (element) => element.getAttribute('content') ],
+			[ 'meta[name="fc:frame:button:2:action"][content]', (element) => element.getAttribute('content') ]
+		]
+	},
+	fcFrameButton3Action: {
+		rules: [
+			[ 'meta[property="fc:frame:button:3:action"][content]', (element) => element.getAttribute('content') ],
+			[ 'meta[name="fc:frame:button:3:action"][content]', (element) => element.getAttribute('content') ]
+		]
+	},
+	fcFrameButton4Action: {
+		rules: [
+			[ 'meta[property="fc:frame:button:4:action"][content]', (element) => element.getAttribute('content') ],
+			[ 'meta[name="fc:frame:button:4:action"][content]', (element) => element.getAttribute('content') ]
+		]
+	},
 }
